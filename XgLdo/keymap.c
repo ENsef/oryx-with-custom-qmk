@@ -138,7 +138,11 @@ bool rgb_matrix_indicators_user(void) {
   return true;
 }
 
+#include "features/achordion.h"
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  if (!process_achordion(keycode, record)) { return false; }
+
   switch (keycode) {
 
     case RGB_SLD:
@@ -163,3 +167,7 @@ const key_override_t **key_overrides = (const key_override_t *[]){
     &delete_key_override,
     NULL // Required terminator
 };
+
+void matrix_scan_user(void) {
+  achordion_task();
+}
