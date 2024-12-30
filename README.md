@@ -1,3 +1,7 @@
+# This is a fork of poulainpi's project to customize Oryx configurations with custom QMK, please visit the origonal repo to fork your own :)
+
+https://github.com/poulainpi/oryx-with-custom-qmk
+
 # Oryx with custom QMK
 
 This repository allows combining the convenience of [Oryx’s](https://www.zsa.io/oryx) graphical layout editing with the power of [QMK](https://qmk.fm), allowing you to customize your Oryx layout with advanced QMK features like Achordion and Repeat Key, while automating firmware builds through GitHub Actions.
